@@ -1,0 +1,19 @@
+#! /usr/bin/bash
+
+file_name=$(echo $1 | grep -oP '^[^.]*')
+if [ -f $file_name ];
+then
+ if [ $1 -ot $file_name ];
+ then
+  printf "\n---Output---\n\n"
+ ./$file_name
+ else
+  gcc $1 -o $file_name
+  printf "\n---Output---\n\n"
+  ./$file_name
+ fi
+else
+ gcc $1 -o $file_name
+ printf "\n---Output---\n\n"
+ ./$file_name
+fi
