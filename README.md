@@ -55,8 +55,7 @@ Then run it using compc
 compc test.c
 ```
 
-If everything is set up correctly, then it should show _Hello, World!_  
-as output.
+If everything is set up correctly, then it should show _Hello, World!_ as output.
 
 ### You reached here!
 
