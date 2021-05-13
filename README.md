@@ -31,7 +31,7 @@ Now this should work without any hassle.
 ```bash
 compc <file_name>
 ```
-- If you file_name is test.c then,
+- If your file_name is test.c then,
 ```bash
 compc test.c
 ```
