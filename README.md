@@ -1,5 +1,5 @@
 # compc
-**This will only work in linux terminal**
+**This may only work in bash**
 
 Compiling C program using `gcc` creates an output file, which needs
 to be run separately.  
@@ -9,22 +9,22 @@ bash file so the C file runs after compilation.
 There still are some features that need to be introduced.  
 Please contribute if you may be willing to or raise an issue.
 
+### How to make it work(clone this repo first)
+- First change directory to this project.
 
-### How to make it work
 - Open the terminal and write
 ```bash
-echo $HOME
+pwd
 ```
-- Check if `$HOME/.local/bin` exists in the path.
-
-- If it doesn't then do the following (not permanent)
+- Add this project to the PATH variable
 ```bash
-export $PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:<path-to-this-project>
 ```
-- Copy `compc` to the `$HOME/.local/bin` directory.
+If your path to this project is `/home/<username>/compc` then, use `export PATH=$PATH:/home/<username>/compc`.
+- This way of exporting is not permanent. To make it permanent,
+update the .bashrc file with the export command at the end of the file.
 
-Now this should work without any hassle.
-
+**NOTE:** .bashrc file is an integral part of bash. Please do not play with it.
 
 ### Trying it out!
 

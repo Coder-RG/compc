@@ -1,6 +1,18 @@
 #! /usr/bin/bash
 
 file_name=$(echo $1 | grep -oP '^[^.]*')
+
+compile(){
+ gcc $1 -o $file_name
+ if [ $? -eq 0 ];
+ then
+  printf "\n---Output---\n\n"
+  ./$file_name
+ else
+  printf "\nError during compilation. Exiting!\n"
+ fi
+}
+
 if [ -f $file_name ];
 then
  if [ $1 -ot $file_name ];
@@ -8,12 +20,9 @@ then
   printf "\n---Output---\n\n"
  ./$file_name
  else
-  gcc $1 -o $file_name
-  printf "\n---Output---\n\n"
-  ./$file_name
+  compile $1
  fi
 else
- gcc $1 -o $file_name
- printf "\n---Output---\n\n"
- ./$file_name
+ compile $1
 fi
+exit

@@ -1,5 +1,10 @@
 # To Do
 
-- [ ] Add an exit status check for gcc o/p
-- [ ] Only show o/p if the exit status is 0
+### Ongoing
+
 - [ ] Ability to pass arguments to gcc
+
+### Completed
+
+- [x] Add an exit status check for gcc o/p
+- [x] Only show o/p if the exit status is 0
