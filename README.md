@@ -1,5 +1,5 @@
 # compc
-![MIT License](https://img.shields.io/badge/License-MIT-green.svg) [![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/) [![GitHub tag](https://img.shields.io/github/tag/Coder-RG/compc.svg)](https://GitHub.com/Coder-RG/compc/tags/)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) [![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/) [![GitHub tag](https://img.shields.io/github/tag/Coder-RG/compc.svg)](https://GitHub.com/Coder-RG/compc/tags/)
 
 
 
