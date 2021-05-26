@@ -13,7 +13,13 @@ bash file so the C file runs after compilation.
 There still are some features that need to be introduced.  
 Please contribute if you may be willing to or raise an issue.
 
-### How to make it work(clone this repo first)
+## Table of Content
+1. [How to make it work](#how-to-make-it-work)
+2. [Trying it out](#trying-it-out)
+3. [Some example code](#some-example-code)
+4. [You reached here](#you-reached-here)
+
+## How to make it work
 - First change directory to this project.
 
 - Open the terminal and write
@@ -30,7 +36,7 @@ update the .bashrc file with the export command at the end of the file.
 
 **NOTE:** .bashrc file is an integral part of bash. Please do not play with it.
 
-### Trying it out!
+## Trying it out
 
 ```bash
 compc <file_name>
@@ -40,7 +46,7 @@ compc <file_name>
 compc test.c
 ```
 
-### Some example code
+## Some example code
 
 Create a new file and copy this code.(ex. test.c)
 
@@ -61,7 +67,7 @@ compc test.c
 
 If everything is set up correctly, then it should show _Hello, World!_ as output.
 
-### You reached here!
+## You reached here
 
 The bash file works somewhat like,
 1. It uses `gcc <file_name>.c -o file_name`
